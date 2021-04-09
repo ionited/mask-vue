@@ -2,7 +2,7 @@
 
 > Create your masks for Vue easily
 
-Vue wrapper for [https://github.com/ionited/mask](@ionited/mask). Compatible with Vue 3
+Vue wrapper for [@ionited/mask](https://github.com/ionited/mask). Compatible with Vue 3
 
 ## Quick start
 
@@ -63,7 +63,7 @@ You can create your own mask logic easily, you only need `register` a mask and u
 register(name: string, mask: any): void;
 ```
 
-See more [https://github.com/ionited/mask](@ionited/mask) 
+See more [@ionited/mask](https://github.com/ionited/mask) 
 
 ## License
 
