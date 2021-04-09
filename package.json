@@ -1,0 +1,38 @@
+{
+  "name": "@ionited/mask-vue",
+  "version": "0.1.0",
+  "description": "Create your masks for Vue easily",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionited/mask-vue.git"
+  },
+  "keywords": [
+    "Mask",
+    "Core",
+    "Vue"
+  ],
+  "author": "Ion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ionited/mask-vue/issues"
+  },
+  "homepage": "https://github.com/ionited/mask-vue#readme",
+  "dependencies": {
+    "@ionited/mask": "^0.1.4",
+    "vue": "^3.0.11"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
