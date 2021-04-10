@@ -1,11 +1,12 @@
 {
   "name": "@ionited/mask-vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create your masks for Vue easily",
   "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "webpack"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -23,14 +24,17 @@
   },
   "homepage": "https://github.com/ionited/mask-vue#readme",
   "dependencies": {
-    "@ionited/mask": "^0.1.4",
+    "@ionited/mask": "^0.1.9",
     "vue": "^3.0.11"
   },
   "devDependencies": {
-    "ts-loader": "^8.1.0",
-    "typescript": "^4.2.4",
-    "webpack": "^5.31.2",
-    "webpack-cli": "^4.6.0"
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.45.1",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
   },
   "files": [
     "dist/**/*"
