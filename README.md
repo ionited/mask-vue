@@ -2,7 +2,7 @@
 
 > Create your masks for Vue easily
 
-Vue wrapper for [@ionited/mask](https://github.com/ionited/mask). Compatible with Vue 3
+Vue wrapper for [@ionited/mask](https://github.com/ionited/mask). Compatible with Vue 3 and Ionic Vue
 
 ## Quick start
 
