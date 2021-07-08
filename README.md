@@ -14,10 +14,6 @@ Choose your favorite option below:
 npm i @ionited/mask-vue
 ```
 
-### Download
-
-[mask.js](dist/index.js)
-
 ### Get from UNPKG
 
 [https://unpkg.com/@ionited/mask-vue@latest/dist/index.js](https://unpkg.com/@ionited/mask-vue@latest/dist/indext.js)
