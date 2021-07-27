@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/ionited/mask-vue#readme",
   "dependencies": {
-    "@ionited/mask": "^0.1.23",
-    "vue": "^3.1.4"
+    "@ionited/mask": "^0.2.0",
+    "vue": "^3.1.5"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^18.0.0",
