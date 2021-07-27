@@ -1,8 +1,8 @@
 import { Mask } from '@ionited/mask';
 import { Directive } from 'vue';
 
-function addMask(el: HTMLElement, input: HTMLInputElement, options: any) {
-  (el as any).mask = Mask(input, options);
+function addMask(el: any, input: HTMLInputElement, options: any) {
+  el.mask = Mask(input, options);
 }
 
 export const mask: Directive = {
@@ -25,7 +25,7 @@ export const mask: Directive = {
     }
   },
 
-  unmounted(el: any) {
+  unmounted(el) {
     el.mask.instance.destroy();
   }
 }
