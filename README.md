@@ -63,4 +63,4 @@ See more [@ionited/mask](https://github.com/ionited/mask)
 
 ## License
 
-Copyright (c) 2021 Ion. Licensed under [Mit License](LICENSE).
+Copyright (c) 2021 Ion. Licensed under [MIT License](LICENSE).
