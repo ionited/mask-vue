@@ -1,6 +1,6 @@
 {
   "name": "@ionited/mask-vue",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Create your masks for Vue easily",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
