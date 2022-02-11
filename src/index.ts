@@ -1,37 +1,34 @@
 import { Mask } from '@ionited/mask';
-import { Directive } from 'vue';
+import { Directive, DirectiveBinding } from 'vue';
 
-function addMask(el: any, input: HTMLInputElement, options: any) {
-  el.mask = Mask(input, options);
+const addMask = (el: any, input: HTMLInputElement, options: any) => el.mask = Mask(input, options);
+
+const getInput = (el: HTMLElement, binding: DirectiveBinding) => {
+  if (el.nodeName === 'INPUT') {
+    const input = el as HTMLInputElement;
+
+    addMask(el, input, binding.value);
+  } else {
+    const input = el.querySelector('input') as HTMLInputElement;
+
+    if (input) addMask(el, input, binding.value);
+  }
 }
 
 export const mask: Directive = {
   mounted(el: HTMLElement, binding) {
-    let input: HTMLInputElement;
-
-    if (el.nodeName === 'INPUT') {
-      input = el as HTMLInputElement;
-
-      addMask(el, input, binding.value);
-    } else {
-      input = el.querySelector('input') as HTMLInputElement;
-
-      if (input) {
-        addMask(el, input, binding.value);
-      } else if ((el as any).getInputElement) {
-        (el as any).getInputElement()
-        .then((input: HTMLInputElement) => addMask(el, input, binding.value));
-      }
-    }
+    getInput(el, binding);
   },
 
   unmounted(el) {
     el.mask.instance.destroy();
+  },
+
+  updated(el, binding) {
+    if (!el.mask) getInput(el, binding);
   }
 }
 
-export function register(name: string, mask: any) {
-  return Mask.register(name, mask);
-}
+export const register = (name: string, mask: any) => Mask.register(name, mask);
 
 export { MaskCore } from '@ionited/mask/core';
