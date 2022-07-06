@@ -9,12 +9,12 @@ const getInput = (el: HTMLElement, binding: DirectiveBinding) => {
     const input = el.querySelector('input') as HTMLInputElement;
 
     if (input) addMask(el, input, binding.value);
-    else setTimeout(() => getInput(el, binding));
+    else setTimeout(() => getInput(el, binding), 25);
   }
 }
 
 export const mask: Directive = {
-  mounted(el: HTMLElement, binding) {
+  mounted(el, binding) {
     getInput(el, binding);
   },
 
