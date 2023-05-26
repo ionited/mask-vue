@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/ionited/mask-vue#readme",
   "dependencies": {
-    "@ionited/mask": "^0.4.6",
-    "vue": "^3.2.39"
+    "@ionited/mask": "^0.5.0",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -36,7 +36,7 @@
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.34.0",
-    "typescript": "^4.8.4"
+    "typescript": "^5.0.4"
   },
   "files": [
     "dist/**/*"
